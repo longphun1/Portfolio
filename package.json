@@ -1,5 +1,5 @@
 {
-  "name": "Indecision-app",
+  "name": "Boilerplate",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -21,6 +21,7 @@
     "babel-preset-env": "^1.5.2",
     "babel-preset-react": "^6.24.1",
     "css-loader": "0.28.4",
+    "emailjs-com": "^2.6.3",
     "enzyme-adapter-react-16": "1.0.0",
     "express": "^4.17.1",
     "extract-text-webpack-plugin": "^4.0.0-alpha.0",

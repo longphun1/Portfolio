@@ -507,7 +507,13 @@ nav li {
     nav li {
         font-size: 140%;
     }
-} 
+}
+
+@media only screen and (width: 280px) {
+    nav li {
+        font-size: 130%;
+    }
+}
 
 
 

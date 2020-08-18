@@ -354,7 +354,7 @@ nav li {
     } */
     
     .container {
-        margin-top: 20%;
+        margin-top: 11%;
         max-width: 300px;
         margin-bottom: 3%;
     }
@@ -427,15 +427,15 @@ nav li {
     }
 }
 
-@media only screen and (max-height: 1000px) {
+@media only screen and (min-width: 2400px) {
     .container {
-        margin-top: 5%;
+        margin-top: 20%;
     }
 }
 
-@media only screen and (max-height: 1200px) {
+@media only screen and (max-height: 900px) {
     .container {
-        margin-top: 13%;
+        margin-top: 7%;
     }
 }
 

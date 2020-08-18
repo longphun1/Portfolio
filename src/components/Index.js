@@ -68,7 +68,7 @@ class Index extends Component {
 
         var templateParams = {
             from_name: this.state.name + '(' + this.state.email + ')',
-            to_name: 'longphun90@gmail.com',
+            to_name: 'Long',
             subject: this.state.subject,
             message_html: this.state.message,
         }

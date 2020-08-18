@@ -427,6 +427,19 @@ nav li {
     }
 }
 
+@media only screen and (max-height: 1000px) {
+    .container {
+        margin-top: 5%;
+    }
+}
+
+@media only screen and (max-height: 1200px) {
+    .container {
+        margin-top: 13%;
+    }
+}
+
+
 @media only screen and (width: 768px){
     .intro {
         height: 1024px;

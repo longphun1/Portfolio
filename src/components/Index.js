@@ -155,7 +155,7 @@ class Index extends Component {
                     <div className="projects">
                         <h1 className="project-title">Projects</h1>
                         <div className="project1">
-                            <img className="image1" src="https://i.imgur.com/ZAjgkZ0.png"></img>
+                            <a className="doctor-app-link" href="http://54.67.60.238/" target="_blank"><img className="image1" src="https://i.imgur.com/ZAjgkZ0.png"></img></a>
                             <h2 className="project-summary">A software application thats allow patients to register a account to make appointments and make payments online. Allow one user to be the admin to see all patients and appointments.</h2>
                             <h2 className="tech-used">Tech Used</h2>
                             <h3 className="tech-used" style={{ marginBottom: "7%" }}>Javascript  |  Angular  |  MongoDB  |  Bootstrap</h3>

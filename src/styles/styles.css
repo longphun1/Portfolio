@@ -247,6 +247,11 @@ nav li {
     text-align: center;
 }
 
+.image1:hover {
+ border: 2px solid #f38721;
+ box-shadow: 0 0 5px #f38721, 0 0 20px #f38721, 0 0 40px #f38721;
+}
+
 .image1 {
     width: 100%;
     border-radius: 10px;

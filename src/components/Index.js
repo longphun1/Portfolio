@@ -158,7 +158,7 @@ class Index extends Component {
                         <h1 className="project-title">Projects</h1>
                         <div className="project">
                             <a className="doctor-app-link" href="http://54.67.60.238/" target="_blank"><img className="image1" src="https://i.imgur.com/ZAjgkZ0.png"></img></a>
-                            <h2 className="project-summary">A software application thats allow patients to register a account to make appointments and make payments online. Allow one user to be the admin to see all patients and appointments.</h2>
+                            <h2 className="project-summary">A software application thats allow users to register a account, make appointments, and make payments. Allow one user to be the admin to see all patients and appointments.</h2>
                             <h2 className="tech-used">Tech Used</h2>
                             <h3 className="tech-used">Javascript  |  Angular  |  MongoDB  |  Bootstrap</h3>
                             <a className="view-github" href="https://github.com/longphun1/doctors-app" target="_blank">View GitHub <img class="view-icon" src="https://i.imgur.com/GdNRuHu.png"></img></a>
@@ -168,6 +168,7 @@ class Index extends Component {
                             <h2 className="project-summary">Blog application where a user can register and create new posts for others to see. A different user can view other people's posts and leave comments.</h2>
                             <h2 className="tech-used">Tech Used</h2>
                             <h3 className="tech-used">Java  |  Spring Tool Suite  |  MySQL</h3>
+                            <a className="view-github" href="https://github.com/longphun1/java-BlogApp" target="_blank">View GitHub <img class="view-icon" src="https://i.imgur.com/GdNRuHu.png"></img></a>
                         </div>
                         <div className="project">
                             <a href="https://intense-plateau-45727.herokuapp.com/" target="_blank"><img className="image1" src="https://i.imgur.com/bRxcjGm.png"></img></a>

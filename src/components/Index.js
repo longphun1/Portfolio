@@ -114,7 +114,7 @@ class Index extends Component {
                         </div>
                         <div className="aboutMe">
                             <h1 className="info">Hello, my name is Long Phun.</h1>
-                            <h2 className="info">I am a Full Stack Developer with experience working with Python, Java, React, and MEAN frameworks. I am passionate about going into the software development industry and learning something new everyday.</h2>
+                            <h2 className="info">I am a Full Stack Developer with experience working with Python, Java, React, and MEAN frameworks. I am passionate about going into the software development industry and learning something new everyday. <a className="resume-link" href="https://resume.creddle.io/resume/el4rrtd0w2l" target="_blank">View my resume...</a></h2>
                         </div>
                     </div>
                 </div>

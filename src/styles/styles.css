@@ -118,6 +118,11 @@ nav li {
     font-family: 'Courier New', Courier, monospace;
 }
 
+.resume-link {
+    text-decoration: none;
+    color: rgb(37, 37, 179);
+}
+
 .skills-container{
     /* height: 90vh; */
     margin-top: 23%;

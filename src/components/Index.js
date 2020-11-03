@@ -7,7 +7,7 @@ import TextArea from './TextArea';
 import Input2 from './Input2';
 
 class Index extends Component {
-    constructor (props) {
+    constructor(props) {
         super(props)
 
         this.state = {
@@ -24,16 +24,16 @@ class Index extends Component {
         }
     }
 
-    handleInputChange (event) {
+    handleInputChange(event) {
         event.preventDefault()
         const target = event.target;
         const name = target.name;
         const value = target.value
 
-        this.setState({[name]: value});
+        this.setState({ [name]: value });
     }
 
-    validateMail () {
+    validateMail() {
         let errors = {};
         let formIsValid = true;
 
@@ -59,10 +59,10 @@ class Index extends Component {
         return formIsValid;
     }
 
-    sentMessage (event) {
+    sentMessage(event) {
         event.preventDefault()
 
-        if (!this.validateMail()){
+        if (!this.validateMail()) {
             return;
         }
 
@@ -73,24 +73,24 @@ class Index extends Component {
             message_html: this.state.message,
         }
 
-        emailjs.send('contact_service', 'template_CcYeWkv5', templateParams, 'user_J1BDkVHh8QTjNGT1n94LV' )
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        });
+        emailjs.send('contact_service', 'template_CcYeWkv5', templateParams, 'user_J1BDkVHh8QTjNGT1n94LV')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
 
         this.setState({
-            name:'',
+            name: '',
             email: '',
             subject: '',
             message: '',
         })
     }
 
-    render () {
+    render() {
         return (
-            <div className="body">                
+            <div className="body">
                 <div id="intro" className="intro">
                     <div className="navbar">
                         <nav>
@@ -135,7 +135,7 @@ class Index extends Component {
                             <h3 className="text">Django</h3>
                             <h3 className="text">Flask</h3>
                             <h3 className="text">Spring</h3>
-                            <h3 className="text">Express</h3>
+                            <h3 className="text">React</h3>
                             <h3 className="text">Bootstrap</h3>
                         </div>
                         <div className="databases">
@@ -164,24 +164,24 @@ class Index extends Component {
                             <a className="view-github" href="https://github.com/longphun1/doctors-app" target="_blank">View GitHub <img class="view-icon" src="https://i.imgur.com/GdNRuHu.png"></img></a>
                         </div>
                         <div className="project">
+                            <a href="https://lp-expensify-app.herokuapp.com/" target="_blank"><img className="image1" src="/images/budget-book-snapshot.png"></img></a>
+                            <h2 className="project-summary">Built with react, a responsive website that grant users the ability to login with their Google account and keep track of their spendings. Data storage and Google account authorization are handled with Firebase.</h2>
+                            <h2 className="tech-used">Tech Used</h2>
+                            <h3 className="tech-used">Javascript  |  React  |  HTML/SCSS | Firebase</h3>
+                            <a className="view-github" href="https://github.com/longphun1/react-nail-app" target="_blank">View GitHub <img class="view-icon" src="https://i.imgur.com/GdNRuHu.png"></img></a>
+                        </div>
+                        <div className="project">
                             <img className="image2" src="https://i.imgur.com/OZC7mZh.png"></img>
                             <h2 className="project-summary">Blog application where a user can register and create new posts for others to see. A different user can view other people's posts and leave comments.</h2>
                             <h2 className="tech-used">Tech Used</h2>
                             <h3 className="tech-used">Java  |  Spring Tool Suite  |  MySQL</h3>
                             <a className="view-github" href="https://github.com/longphun1/java-BlogApp" target="_blank">View GitHub <img class="view-icon" src="https://i.imgur.com/GdNRuHu.png"></img></a>
                         </div>
-                        <div className="project">
-                            <a href="https://intense-plateau-45727.herokuapp.com/" target="_blank"><img className="image1" src="https://i.imgur.com/bRxcjGm.png"></img></a>
-                            <h2 className="project-summary">Built with react, a responsive webpage that showcase a nail salon brochure images and provide links for more information.</h2>
-                            <h2 className="tech-used">Tech Used</h2>
-                            <h3 className="tech-used">Javascript  |  React  |  HTML/CSS</h3>
-                            <a className="view-github" href="https://github.com/longphun1/react-nail-app" target="_blank">View GitHub <img class="view-icon" src="https://i.imgur.com/GdNRuHu.png"></img></a>
-                        </div>
                     </div>
                 </div>
-                
+
                 <div className="contact-container">
-                <div id="contact"></div>
+                    <div id="contact"></div>
                     <div className="contact">
                         <h1 className="contact-title">Contact</h1>
                         <h3 className="contact-text">Have a question or want to chat? Don't hestitate to reach out to me!</h3>
@@ -229,8 +229,8 @@ class Index extends Component {
                                 name='submit'
                                 className='submit'
                                 required='required'
-                            />   
-                            
+                            />
+
                         </form>
                     </div>
                 </div>

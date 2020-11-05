@@ -128,6 +128,7 @@ class Index extends Component {
                             <h3 className="text">Python</h3>
                             <h3 className="text">Java</h3>
                             <h3 className="text">HTML/CSS</h3>
+                            <h3 className="text">SCSS</h3>
                         </div>
                         <div className="frameworks">
                             <h2 className="text1">Frameworks</h2>

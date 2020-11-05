@@ -105,7 +105,6 @@ class Index extends Component {
                     <div id="stars"></div>
                     <div id="stars2"></div>
                     <div id="stars3"></div>
-                    <img className="moon" src="https://i.imgur.com/C4TF785.png" height="200px" width="250px"></img>
                     <div className="headshot-about-container">
                         <div className="container">
                             <img className="headshot" src="https://i.imgur.com/oe76uz6.jpg"></img>

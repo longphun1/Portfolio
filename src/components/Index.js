@@ -169,7 +169,7 @@ class Index extends Component {
                             <h2 className="project-summary">Built with react, a responsive website that grant users the ability to login with their Google account and keep track of their spendings. Data storage and Google account authorization are handled with Firebase.</h2>
                             <h2 className="tech-used">Tech Used</h2>
                             <h3 className="tech-used">Javascript  |  React  |  HTML/SCSS | Firebase</h3>
-                            <a className="view-github" href="https://github.com/longphun1/react-nail-app" target="_blank">View GitHub <img class="view-icon" src="https://i.imgur.com/GdNRuHu.png"></img></a>
+                            <a className="view-github" href="https://github.com/longphun1/budgetBook-react-app" target="_blank">View GitHub <img class="view-icon" src="https://i.imgur.com/GdNRuHu.png"></img></a>
                         </div>
                         <div className="project">
                             <img className="image2" src="https://i.imgur.com/OZC7mZh.png"></img>

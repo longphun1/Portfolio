@@ -118,64 +118,76 @@ class Index extends Component {
                     </div>
                 </div>
                 <div id="skills"></div>
-                <div className="skills-container">
-                    <div className="skills">
-                        <h1 className="skill-title">Skills</h1>
-                        <div className="languages">
-                            <h2 className="text1">Languages</h2>
-                            <h3 className="text">Javascript</h3>
-                            <h3 className="text">Python</h3>
-                            <h3 className="text">Java</h3>
-                            <h3 className="text">HTML/CSS</h3>
-                            <h3 className="text">SCSS</h3>
-                        </div>
-                        <div className="frameworks">
-                            <h2 className="text1">Frameworks</h2>
-                            <h3 className="text">Angular</h3>
-                            <h3 className="text">Django</h3>
-                            <h3 className="text">Flask</h3>
-                            <h3 className="text">Spring</h3>
-                            <h3 className="text">React</h3>
-                            <h3 className="text">Bootstrap</h3>
-                        </div>
-                        <div className="databases">
-                            <h2 className="text1">Databases</h2>
-                            <h3 className="text">MySQL</h3>
-                            <h3 className="text">MongoDB</h3>
-                            <h3 className="text">Firebase</h3>
-                        </div>
-                        <div className="other">
-                            <h2 className="text1">Other</h2>
-                            <h3 className="text">React Library</h3>
-                            <h3 className="text">AWS Deployment</h3>
-                            <h3 className="text">Heroku Deployment</h3>
+
+                <div className="background-image">
+                    <div className="skills-container">
+                        <div className="skills-box">
+                            <div className="skills-inner-box">
+                                <h1 className="skill-title">Skills</h1>
+                                <div className="skills-sections">
+                                    <h2 className="skills-section-title">Languages</h2>
+                                    <img className="skills-icons-resize" src="/images/languages.png"></img>
+                                    <h3 className="text">Javascript</h3>
+                                    <h3 className="text">Python</h3>
+                                    <h3 className="text">Java</h3>
+                                    <h3 className="text">HTML/CSS</h3>
+                                    <h3 className="text">SCSS</h3>
+                                </div>
+                                <div className="skills-sections">
+                                    <h2 className="skills-section-title">Frameworks</h2>
+                                    <img className="skills-icons" src="/images/framework.png"></img>
+                                    <h3 className="text">Angular</h3>
+                                    <h3 className="text">Django</h3>
+                                    <h3 className="text">Flask</h3>
+                                    <h3 className="text">Spring</h3>
+                                    <h3 className="text">React</h3>
+                                    <h3 className="text">Bootstrap</h3>
+                                </div>
+                                <div className="skills-sections">
+                                    <h2 className="skills-section-title">Databases</h2>
+                                    <img className="skills-icons-resize2" src="/images/database.png"></img>
+                                    <h3 className="text">MySQL</h3>
+                                    <h3 className="text">MongoDB</h3>
+                                    <h3 className="text">Firebase</h3>
+                                </div>
+                                <div className="skills-sections">
+                                    <h2 className="skills-section-title">Other</h2>
+                                    <img className="skills-icons" src="/images/others.png"></img>
+                                    <h3 className="text">AWS Deployment</h3>
+                                    <h3 className="text">Heroku</h3>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div id="projects"></div>
-                <div className="projects-container">
-                    <div className="projects">
-                        <h1 className="project-title">Projects</h1>
-                        <div className="project">
-                            <a className="doctor-app-link" href="http://54.67.60.238/" target="_blank"><img className="image1" src="https://i.imgur.com/ZAjgkZ0.png"></img></a>
-                            <h2 className="project-summary">A software application thats allow users to register a account, make appointments, and make payments. Allow one user to be the admin to see all patients and appointments.</h2>
-                            <h2 className="tech-used">Tech Used</h2>
-                            <h3 className="tech-used">Javascript  |  Angular  |  MongoDB  |  Bootstrap</h3>
-                            <a className="view-github" href="https://github.com/longphun1/doctors-app" target="_blank">View GitHub <img class="view-icon" src="https://i.imgur.com/GdNRuHu.png"></img></a>
-                        </div>
-                        <div className="project">
-                            <a href="https://lp-expensify-app.herokuapp.com/" target="_blank"><img className="image1" src="/images/budget-book-snapshot.png"></img></a>
-                            <h2 className="project-summary">Built with react, a responsive website that grant users the ability to login with their Google account and keep track of their spendings. Data storage and Google account authorization are handled with Firebase.</h2>
-                            <h2 className="tech-used">Tech Used</h2>
-                            <h3 className="tech-used">Javascript  |  React  |  HTML/SCSS | Firebase</h3>
-                            <a className="view-github" href="https://github.com/longphun1/budgetBook-react-app" target="_blank">View GitHub <img class="view-icon" src="https://i.imgur.com/GdNRuHu.png"></img></a>
-                        </div>
-                        <div className="project">
-                            <img className="image2" src="https://i.imgur.com/OZC7mZh.png"></img>
-                            <h2 className="project-summary">Blog application where a user can register and create new posts for others to see. A different user can view other people's posts and leave comments.</h2>
-                            <h2 className="tech-used">Tech Used</h2>
-                            <h3 className="tech-used">Java  |  Spring Tool Suite  |  MySQL</h3>
-                            <a className="view-github" href="https://github.com/longphun1/java-BlogApp" target="_blank">View GitHub <img class="view-icon" src="https://i.imgur.com/GdNRuHu.png"></img></a>
+                    <div id="projects"></div>
+                    <div className="projects-container">
+                        <div className="projects">
+                            <h1 className="project-title">Projects</h1>
+                            <div className="project">
+                                <img className="image1" src="https://i.imgur.com/ZAjgkZ0.png"></img>
+                                <h2 className="project-summary">A software application thats allow users to register a account, make appointments, and make payments. Allow one user to be the admin to see all patients and appointments.</h2>
+                                <h2 className="tech-used">Tech Used</h2>
+                                <h3 className="tech-used">Javascript  |  Angular  |  MongoDB  |  Bootstrap</h3>
+                                <a className="view-site" href="http://54.67.60.238/" target="_blank">View Website</a>
+                                <p className="projects-or">|</p>
+                                <a href="https://github.com/longphun1/doctors-app" target="_blank"><img class="github-icon" src="https://i.imgur.com/GdNRuHu.png"></img></a>
+                            </div>
+                            <div className="project">
+                                <img className="image1" src="/images/budget-book-snapshot.png"></img>
+                                <h2 className="project-summary">Built with react, a responsive website that grant users the ability to login with their Google account and keep track of their spendings. Data storage and Google account authorization are handled with Firebase.</h2>
+                                <h2 className="tech-used">Tech Used</h2>
+                                <h3 className="tech-used">Javascript  |  React  |  HTML/SCSS | Firebase</h3>
+                                <a className="view-site" href="https://lp-expensify-app.herokuapp.com/" target="_blank">View Website</a>
+                                <p className="projects-or">|</p>
+                                <a href="https://github.com/longphun1/budgetBook-react-app" target="_blank"><img class="github-icon" src="https://i.imgur.com/GdNRuHu.png"></img></a>
+                            </div>
+                            <div className="project">
+                                <img className="image1" src="https://i.imgur.com/OZC7mZh.png"></img>
+                                <h2 className="project-summary">Blog application where a user can register and create new posts for others to see. A different user can view other people's posts and leave comments.</h2>
+                                <h2 className="tech-used">Tech Used</h2>
+                                <h3 className="tech-used">Java  |  Spring Tool Suite  |  MySQL</h3>
+                                <a className="view-site" href="https://github.com/longphun1/java-BlogApp" target="_blank">View <img class="github-icon" src="https://i.imgur.com/GdNRuHu.png"></img></a>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -11,10 +11,6 @@
     min-height: 2000px;
 }
 
-/* .intro {
-    height: 90vh;
-} */
-
 .intro {
     min-height: 800px;
     margin-bottom: 9%;
@@ -81,17 +77,12 @@ nav li {
 .headshot {
     width: 100%;
     height: 250px;
-    /* height: 300px; */
     clip-path: circle(50% at 50%);
-    /* left: 20%; */
-    /* margin-top: 15%; */
 }
 
-/* icons width and height are 50px */
 .icon1 {
     width: 40px;
     height: 40px;
-    /* margin-left: 95px; */
     margin-top: 15px;
     display: inline-block;
 }
@@ -108,8 +99,6 @@ nav li {
     display: inline-block;
     max-width: 900px;
     max-height: 600px;
-    /* margin-left: 41%; */
-    /* margin-top: 15%; */
 }
 
 
@@ -155,7 +144,6 @@ nav li {
 .skills-inner-box {
     min-height: 50vh;
     width: 100vw;
-    /* max-width: 50vw; */
 }
 
 .skill-title {
@@ -228,7 +216,7 @@ nav li {
 
 .projects-container {
     position: relative;
-    margin-top: 13%; /*margin was 3% */
+    margin-top: 13%; 
 }
 
 .projects {
@@ -456,12 +444,6 @@ nav li {
     
         }
       }
-}
-
-@media only screen and (max-width: 800px){
-    .container {
-        margin-top: 13%;
-    }
 }
 
 @media only screen and (min-width: 1000px) {

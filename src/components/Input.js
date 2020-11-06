@@ -4,7 +4,7 @@ class Input extends Component {
     render () {
         return (
             <div className='form-group'>
-                <label class="form-label">Name:</label>
+                <label class="form-label">Name: <span className='error'>{this.props.error}</span></label>
                 <input 
                     type={this.props.type}
                     name={this.props.name}
@@ -12,9 +12,8 @@ class Input extends Component {
                     // required={this.props.required}
                     onChange={this.props.onChange}
                     value={this.props.value}
-                    placeholder="Please Enter Name"
+                    placeholder="Please Enter Name (required) " 
                 />
-                <span className='error'>{this.props.error}</span>
             </div>
         )
     }

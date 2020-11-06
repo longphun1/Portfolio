@@ -5,6 +5,7 @@ import Input from './Input';
 import Button from './Button';
 import TextArea from './TextArea';
 import Input2 from './Input2';
+import MessageModal from './Modal';
 
 class Index extends Component {
     constructor(props) {
@@ -20,8 +21,13 @@ class Index extends Component {
                 email: '',
                 subject: '',
                 message: '',
-            }
+            },
+            messager: undefined
         }
+    }
+
+    removeModal = () => {
+        this.setState(() => ({messager: undefined}))
     }
 
     handleInputChange(event) {
@@ -37,24 +43,24 @@ class Index extends Component {
         let errors = {};
         let formIsValid = true;
 
-        // if (!this.state.name || this.state.name.length < 3) {
-        //     errors.name = "Minimum 3 symbols";
-        //     formIsValid = false;
-        // }
+        if (!this.state.name || this.state.name.length < 1) {
+            errors.name = "Please enter your name";
+            formIsValid = false;
+        }
 
         // if (!this.state.message || this.state.message.length < 10) {
         //     errors.message = "Minimum 10 symbols";
         //     formIsValid = false;
         // }
 
-        // if (!this.state.email || this.state.email.length < 3) {
-        //     errors.email = "Minimum of 3 symbols";
-        //     formIsValid = false;
-        // }
+        if (!this.state.email || this.state.email.length < 1) {
+            errors.email = "Please enter an email";
+            formIsValid = false;
+        }
 
-        // this.setState({
-        //     errors: errors
-        // })
+        this.setState({
+            errors: errors
+        })
 
         return formIsValid;
     }
@@ -85,7 +91,8 @@ class Index extends Component {
             email: '',
             subject: '',
             message: '',
-        })
+            messager: this.state.name,
+        });
     }
 
     render() {
@@ -208,7 +215,7 @@ class Index extends Component {
                                 type='text'
                                 name='name'
                                 className="form"
-                                // required='required' 
+                                required='required' 
                                 onChange={this.handleInputChange.bind(this)}
                                 value={this.state.name}
                                 error={this.state.errors.name}
@@ -218,7 +225,7 @@ class Index extends Component {
                                 type='email'
                                 name='email'
                                 className="form"
-                                // required='required'
+                                required='required'
                                 onChange={this.handleInputChange.bind(this)}
                                 value={this.state.email}
                                 error={this.state.errors.email}
@@ -246,6 +253,10 @@ class Index extends Component {
                         </form>
                     </div>
                 </div>
+                <MessageModal 
+                    messager={this.state.messager}
+                    removeModal={this.removeModal}
+                />
             </div>
         )
     }

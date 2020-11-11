@@ -5,16 +5,9 @@
 }
 
 .body {
-    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    min-height: 2000px;
     overflow: hidden;
     width: 100%;
-    min-height: 2000px;
-}
-
-.intro {
-    min-height: 800px;
-    margin-bottom: 9%;
-    text-align: center;
 }
 
 nav{
@@ -57,54 +50,64 @@ nav li {
     transition: width .3s;
 }
 
+.intro {
+    align-items: center;
+    background: url('/images/intro-wallpaper.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+}
+
 .headshot-about-container {
     display: inline-block;
     text-align: center;
+    max-width: 95vw;
 }
 
 .container {
     display: inline-block;
-    max-width: 250px;
-    margin-top: 13%;
+    margin-top: 9%;
+    width: 100vw;
     text-align: center;
 }
 
-.headshot {
-    width: 100%;
-    height: 250px;
-    clip-path: circle(50% at 50%);
+.info {
+    color: #ffff;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.aboutMe {
+    min-width: 35vw;
 }
 
 .icon1 {
     width: 40px;
     height: 40px;
-    margin-top: 15px;
     display: inline-block;
+    vertical-align: middle;
 }
 
 .icon2 {
     width: 40px;
     height: 40px;
-    margin-left: 10px;
-    margin-top: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
     display: inline-block;
-}
-
-.aboutMe {
-    display: inline-block;
-    max-width: 900px;
-    max-height: 600px;
-}
-
-
-.info {
-    color: #ffff;
-    font-family: 'Courier New', Courier, monospace;
+    vertical-align: middle;
 }
 
 .resume-link {
+    color: white;
+    font-size: 200%;
+    font-weight: bold;
     text-decoration: none;
-    color: rgb(37, 37, 179);
+    vertical-align: bottom;
 }
 
 .background-image {
@@ -210,22 +213,18 @@ nav li {
 }
 
 .projects-container {
-    position: relative;
-    margin-top: 13%; 
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
 }
 
 .projects {
-    min-height: 90vh;
-    position: relative;
-    padding-top: 10px;
-    text-align: center;
-}
-
-.project-title {
-    color: rgb(25, 156, 218);
-    font-size: 40px;
-    margin-bottom: 3%;
-    text-align: center;  
+    margin-top: 15%;
+    min-height: 70vh;
+    width: 100vw;
 }
 
 .project {
@@ -233,9 +232,9 @@ nav li {
     background-color: rgb(0, 0, 0);
     border-radius: 20px;  
     display: inline-block;
-    min-height: 570px;
-    max-width: 500px;
     margin-bottom: 2%;
+    max-width: 500px;
+    min-height: 570px;
     opacity: 0.89;
     text-align: center;
     vertical-align: top;
@@ -282,6 +281,7 @@ nav li {
 }
 
 .contact-container {
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
     width: 100%;
     height: 100vh;
     position: relative;
@@ -298,12 +298,7 @@ nav li {
 .contact-title {
     color: rgb(25, 156, 218);
     font-size: 35px;
-    text-align: center;
-}
-
-.contact-text {
-    color: white;
-    margin: 3%;
+    margin-bottom: 3%;
     text-align: center;
 }
 
@@ -339,7 +334,7 @@ nav li {
 }
 
 .error {
-    color: red;
+    color: #E0E0E0;
     font-size: 20px;
 }
 
@@ -387,19 +382,16 @@ nav li {
     height: 30px;
 }
 
-@media only screen and (width: 280px) {
-    .container {
-        margin-top: 17%;
-    }
 
-    .projects-container {
-        margin-top: 15%;
-    }
-}
 
 @media only screen and (max-width:360px) {
     nav li {
         font-size: 130%;
+    }
+
+    .skills-box {
+        margin-top: 13%;
+        margin-bottom: 6%;
     }
 }
 
@@ -424,29 +416,7 @@ nav li {
 
     .skills-container {
         height: 1024px;
-        width: 95%;
         margin: 0 auto;
-    }
-
-    .skills-box {
-        margin-top: 25%;
-    }
-
-    .languages {
-        width: 364.8px;
-        vertical-align: top;
-    }
-    
-    .frameworks {
-        width: 364.8px;
-    }
-    
-    .databases {
-        width: 364.8px;
-    }
-    
-    .other {
-        width: 364.8px;
     }
     
     .projects-container {
@@ -455,7 +425,11 @@ nav li {
     }
 
     .projects {
-        margin-top: 6%;
+        margin-top: 10%;
+    }
+
+    .project {
+        min-height: 620px;
     }
 
     .contact {
@@ -464,6 +438,15 @@ nav li {
 }
 
 @media only screen and (min-width: 768px) {
+    .container {
+        margin-top: 2.5%;
+    }
+
+    .icon2 {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
     .project {
         animation: neon .08s ease-in-out infinite alternate;
     }
@@ -488,20 +471,6 @@ nav li {
 }
 
 @media only screen and (min-width: 1000px) {
-    .intro {
-        height: 90vh;
-    }
-    
-    .container {
-        margin-top: 11%;
-        max-width: 300px;
-        margin-bottom: 1.5%;
-    }
-
-    .headshot {
-        height: 300px;
-    }
-
     .icon1 {
         width: 50px;
         height: 50px;
@@ -512,33 +481,19 @@ nav li {
         height: 50px;
     }
 
-    .aboutMe {
-        display: inline-block;
-        margin-left: 5%;
-        vertical-align: top;
-        /* margin-top: 30%; */
-    }
-
-    .info {
-        font-size: 28px;
-    }
-
     .skills-container{
         height: 100vh;    
     }
 
     .skills-inner-box {
-        width: 50vw;
+        width: 60vw;
     }
 
-    .projects-container {
-        width: 90%;
-        margin: auto;
-        margin-top: 3%; 
+    .projects {
+        margin-top: 0;
     }
 
     .project {
-        width: 23%;
         height: 70vh;
         margin-right: 5%;
         margin-left: 5%;
@@ -549,11 +504,7 @@ nav li {
     }
 }
 
-@media only screen and (width:1024px) {
-    .container {
-        margin-top: 15%;
-    }
-    
+@media only screen and (width:1024px) {    
     .aboutMe {
         margin-top: 3%;
     }
@@ -563,7 +514,15 @@ nav li {
     }
 
     .skills-box {
-        height: 30vh !important;
+        min-height: 20vh !important;
+    }
+    
+    .projects-container {
+        margin-top: 5%;
+    }
+
+    .projects {
+        margin-top: 6%;
     }
 
     .project {
@@ -571,20 +530,19 @@ nav li {
         height: 50vh;
     }
 
-    .projects-container {
-        margin-top: 5%;
-    }
-
     .contact {
         width: 70%;
     }
 }
 
-@media only screen and (min-width: 2400px) {
-    .container {
-        margin-top: 20%;
+@media only screen and (min-width: 1200px) {
+    .project {
+        width: 20%;
+        margin-bottom: 0;
+        margin-top: 0;
     }
 }
+
 
 
 

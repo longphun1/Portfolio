@@ -395,12 +395,8 @@ nav li {
 }
 
 @media only screen and (width: 540px) {
-    .skills-container {
-        margin-top: 19%;
-    }
-
     .projects-container {
-        margin-top: 10%;
+        margin-top: 5%;
     }
 }
 

@@ -71,7 +71,7 @@ nav li {
 .container {
     display: inline-block;
     margin-top: 9%;
-    width: 100vw;
+    width: 95vw;
     text-align: center;
 }
 
@@ -120,7 +120,7 @@ nav li {
 
 .skills-container{
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     justify-content: center;
     position: relative;
     width: 100vw;
@@ -181,8 +181,9 @@ nav li {
 }
 
 .text {
-    margin-bottom: 10px;
     font-size: 100%;
+    margin-bottom: 10px;
+    word-break: break-all;
 }
 
 .skills-section-title{
@@ -381,15 +382,13 @@ nav li {
     height: 30px;
 }
 
-
-
 @media only screen and (max-width:360px) {
     nav li {
-        font-size: 130%;
+        font-size: 120%;
     }
 
     .skills-box {
-        margin-top: 13%;
+        margin-top: 14.5%;
         margin-bottom: 6%;
     }
 }

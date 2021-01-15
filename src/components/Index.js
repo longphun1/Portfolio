@@ -141,11 +141,11 @@ class Index extends Component {
                                 <div className="skills-sections">
                                     <h2 className="skills-section-title">Frameworks</h2>
                                     <img className="skills-icons" src="/images/framework.png"></img>
-                                    <h3 className="text">Angular</h3>
-                                    <h3 className="text">Django</h3>
-                                    <h3 className="text">Flask</h3>
-                                    <h3 className="text">Spring</h3>
                                     <h3 className="text">React</h3>
+                                    <h3 className="text">Django</h3>
+                                    <h3 className="text">Spring</h3>
+                                    <h3 className="text">Angular</h3>
+                                    <h3 className="text">Flask</h3>
                                     <h3 className="text">Bootstrap</h3>
                                 </div>
                                 <div className="skills-sections">
@@ -154,19 +154,24 @@ class Index extends Component {
                                     <h3 className="text">MySQL</h3>
                                     <h3 className="text">MongoDB</h3>
                                     <h3 className="text">Firebase</h3>
+                                    <h3 className="text">SQLite</h3>
                                 </div>
                                 <div className="skills-sections">
                                     <h2 className="skills-section-title">Other</h2>
                                     <img className="skills-icons" src="/images/others.png"></img>
                                     <h3 className="text">AWS Deployment</h3>
                                     <h3 className="text">Heroku</h3>
+                                    <h3 className="text">Restful API</h3>
+                                    <h3 className="text">Webpack</h3>
+                                    <h3 className="text">Babel</h3>
+                                    <h3 className="text">Jasmine</h3>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div id="projects"></div>
                     <div className="projects-container">
-                        <div className="projects">                            
+                        <div className="projects">
                             <div className="project">
                                 <img className="image1" src="https://i.imgur.com/ZAjgkZ0.png"></img>
                                 <h2 className="project-summary">A software application thats allow users to register a account, make appointments, and make payments. Allow one user to be the admin to see all patients and appointments.</h2>
@@ -174,7 +179,7 @@ class Index extends Component {
                                 <h3 className="tech-used">Javascript  |  Angular  |  MongoDB  |  Bootstrap</h3>
                                 <a className="view-site" href="http://54.67.60.238/" target="_blank">View Website</a>
                                 <p className="projects-or">|</p>
-                                <a href="https://github.com/longphun1/doctors-app" target="_blank"><img class="github-icon" src="https://i.imgur.com/GdNRuHu.png"></img></a>
+                                <a href="https://github.com/longphun1/doctors-app" target="_blank"><img className="github-icon" src="https://i.imgur.com/GdNRuHu.png"></img></a>
                             </div>
                             <div className="project">
                                 <img className="image1" src="/images/budget-book-snapshot.png"></img>
@@ -183,14 +188,14 @@ class Index extends Component {
                                 <h3 className="tech-used">Javascript  |  React  |  HTML/SCSS | Firebase</h3>
                                 <a className="view-site" href="https://lp-expensify-app.herokuapp.com/" target="_blank">View Website</a>
                                 <p className="projects-or">|</p>
-                                <a href="https://github.com/longphun1/budgetBook-react-app" target="_blank"><img class="github-icon" src="https://i.imgur.com/GdNRuHu.png"></img></a>
+                                <a href="https://github.com/longphun1/budgetBook-react-app" target="_blank"><img className="github-icon" src="https://i.imgur.com/GdNRuHu.png"></img></a>
                             </div>
                             <div className="project">
                                 <img className="image1" src="https://i.imgur.com/OZC7mZh.png"></img>
                                 <h2 className="project-summary">Blog application where a user can register and create new posts for others to see. A different user can view other people's posts and leave comments.</h2>
                                 <h2 className="tech-used">Tech Used</h2>
                                 <h3 className="tech-used">Java  |  Spring Tool Suite  |  MySQL</h3>
-                                <a className="view-site" href="https://github.com/longphun1/java-BlogApp" target="_blank">View <img class="github-icon" src="https://i.imgur.com/GdNRuHu.png"></img></a>
+                                <a className="view-site" href="https://github.com/longphun1/java-BlogApp" target="_blank">View <img className="github-icon" src="https://i.imgur.com/GdNRuHu.png"></img></a>
                             </div>
                         </div>
                     </div>

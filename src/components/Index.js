@@ -164,7 +164,7 @@ class Index extends Component {
                                     <h3 className="text">Restful API</h3>
                                     <h3 className="text">Webpack</h3>
                                     <h3 className="text">Babel</h3>
-                                    <h3 className="text">Jasmine</h3>
+                                    <h3 className="text">Jest</h3>
                                 </div>
                             </div>
                         </div>

@@ -197,6 +197,13 @@ class Index extends Component {
                                 <h3 className="tech-used">Java  |  Spring Tool Suite  |  MySQL</h3>
                                 <a className="view-site" href="https://github.com/longphun1/java-BlogApp" target="_blank">View <img className="github-icon" src="https://i.imgur.com/GdNRuHu.png"></img></a>
                             </div>
+                            <div style={{marginBottom: "1%"}} className="project">
+                                <img className="image1" src="https://i.imgur.com/rPMrX5f.png"></img>
+                                <h2 className="project-summary"></h2>
+                                <h2 className="tech-used">Python application fabricated with Django as the framework and SQLite as the database. Utilized openweathermap API to get locations weather so users can plan events accordingly</h2>
+                                <h3 className="tech-used">Python | Django | SQLite | API</h3>
+                                <a className="view-site" href="https://github.com/longphun1/python_hangout_app/tree/master" target="_blank">View <img className="github-icon" src="https://i.imgur.com/GdNRuHu.png"></img></a>
+                            </div>
                         </div>
                     </div>
                 </div>

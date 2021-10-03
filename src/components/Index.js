@@ -193,9 +193,7 @@ class Index extends Component {
                                 <h2 className="project-summary">A software application thats allow users to register a account, make appointments, and make payments. Allow one user to be the admin to see all patients and appointments.</h2>
                                 <h2 className="tech-used">Tech Used</h2>
                                 <h3 className="tech-used">Javascript  |  Angular  |  MongoDB  |  Bootstrap</h3>
-                                <a className="view-site" href="http://54.67.60.238/" target="_blank">View Website</a>
-                                <p className="projects-or">|</p>
-                                <a href="https://github.com/longphun1/doctors-app" target="_blank"><img className="github-icon" src="https://i.imgur.com/GdNRuHu.png"></img></a>
+                                <a className="view-site" href="https://github.com/longphun1/doctors-app" target="_blank">View <img className="github-icon" src="https://i.imgur.com/GdNRuHu.png"></img></a>
                             </div>
                             <div className="project">
                                 <img className="image1" src="https://i.imgur.com/OZC7mZh.png"></img>
